@@ -1,10 +1,11 @@
-﻿@{
+﻿@model HomeIndexViewModel
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Soy Jimmy Carreño</h1>
-    <h2>Soy un desarrollador full stack especializado en tecnologías .NET</h2>
+<partial name="_Presentation" />
 
-    <img id="image" src="~/images/Arthur Morgan.jpg" alt="Foto Arthur Morgan" />
-</div>
+<partial name="_Skills" />
+
+<partial name="_SectionProjects" model="Model.Projects"/>
